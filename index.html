@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#101d35"><meta name="description" content="Ronahî - مواقيت الصلاة واتجاه القبلة والأذكار">
+<link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icons/icon-192.png">
+<title>Ronahî</title>
+<style>
+:root{--bg:#0b1426;--panel:#14223b;--panel2:#1b2d4b;--gold:#e9bd68;--gold2:#f5d99e;--txt:#f6f4ef;--muted:#aab7ca;--line:#ffffff16;--green:#9ed7bd}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% -15%,#253b60 0,#0b1426 58%);color:var(--txt);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Tahoma,Arial,sans-serif;min-height:100vh;padding-bottom:92px}.app{max-width:520px;margin:auto;padding:env(safe-area-inset-top) 17px 24px}.top{display:flex;align-items:center;justify-content:space-between;padding:18px 2px 12px}.brand{display:flex;gap:10px;align-items:center}.logo{width:43px;height:43px;border-radius:15px;background:linear-gradient(145deg,#f2d18c,#b98237);display:grid;place-items:center;color:#18243a;font-size:23px;box-shadow:0 8px 22px #0005}.brand h1{font-size:19px;margin:0}.brand small{color:var(--muted);font-size:11px}.top button,.iconbtn{border:1px solid var(--line);background:#ffffff0a;color:var(--txt);border-radius:12px;padding:9px 11px;font-size:17px}.location{text-align:center;color:var(--muted);font-size:13px;margin:8px 0 15px}.location b{color:var(--gold2);font-weight:600}.hero{border:1px solid #e9bd6838;background:linear-gradient(145deg,#1d3150,#14213a 70%);border-radius:25px;padding:23px 20px 20px;text-align:center;position:relative;overflow:hidden;box-shadow:0 18px 45px #0003}.hero:before{content:'☾';position:absolute;font-size:125px;color:#e9bd680d;top:-28px;left:18px}.date{color:var(--gold2);font-size:13px}.hero h2{font-size:16px;font-weight:500;color:var(--muted);margin:18px 0 5px}.next{font-size:34px;font-weight:700;letter-spacing:.4px;margin:0}.count{color:var(--gold2);font-size:14px;margin-top:9px}.progress{height:4px;background:#ffffff16;border-radius:9px;margin:20px 0 0;overflow:hidden}.progress span{height:100%;display:block;width:0;background:linear-gradient(90deg,var(--gold),#fff0c8);border-radius:9px}.sectionhead{display:flex;align-items:center;justify-content:space-between;margin:25px 2px 12px}.sectionhead h3{font-size:16px;margin:0}.sectionhead span{font-size:12px;color:var(--muted)}.prayers{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.prayer{background:linear-gradient(145deg,#172743,#122039);border:1px solid var(--line);border-radius:17px;padding:14px 14px 12px;display:flex;align-items:center;justify-content:space-between}.prayer.active{border-color:#e9bd68a6;background:linear-gradient(145deg,#34405a,#1b2a44);box-shadow:inset 0 0 0 1px #e9bd6822}.pname{font-size:14px;color:#dce4ef}.ptime{font-size:19px;font-weight:650;color:var(--gold2);direction:ltr}.picon{font-size:19px;margin-left:7px}.wide{grid-column:span 2}.tabs{position:fixed;z-index:5;bottom:0;left:0;right:0;padding:9px 12px calc(9px + env(safe-area-inset-bottom));background:#0c1729ed;backdrop-filter:blur(18px);border-top:1px solid var(--line)}.tabrow{max-width:520px;margin:auto;display:grid;grid-template-columns:repeat(4,1fr);gap:5px}.tab{border:0;background:transparent;color:#91a0b7;font-size:11px;padding:7px 2px;border-radius:12px}.tab .ico{display:block;font-size:20px;margin-bottom:3px}.tab.active{color:var(--gold2);background:#e9bd6812}.page{display:none}.page.active{display:block}.card{background:#14233c;border:1px solid var(--line);border-radius:19px;padding:17px;margin-top:13px}.card h3{font-size:16px;margin:0 0 12px}.muted{color:var(--muted);font-size:13px;line-height:1.8}.btn{background:linear-gradient(120deg,#f0d18f,#c18a42);color:#1a263a;border:0;border-radius:13px;padding:12px 16px;font-weight:700;font-size:14px}.btn.secondary{background:#ffffff0d;color:var(--txt);border:1px solid var(--line)}.row{display:flex;align-items:center;justify-content:space-between;gap:12px}.compass{width:220px;height:220px;margin:18px auto;border-radius:50%;border:1px solid #e9bd6870;background:radial-gradient(circle,#233754,#101d32 70%);display:grid;place-items:center;position:relative;box-shadow:0 0 45px #e9bd6810}.needle{font-size:94px;color:var(--gold);transform:rotate(0deg);transition:transform .3s}.compasslabel{position:absolute;top:12px;color:var(--gold2);font-size:12px}.tasbih{text-align:center;padding:25px 0}.countnum{font-size:56px;color:var(--gold2);font-weight:700;margin:8px}.tasbtn{width:145px;height:145px;border-radius:50%;border:7px solid #e9bd6850;background:linear-gradient(145deg,#243b5d,#101d32);color:var(--gold2);font-size:18px;box-shadow:0 10px 28px #0005}.dhikr{padding:14px 0;border-bottom:1px solid var(--line);line-height:1.9}.dhikr:last-child{border:0}.dhikr p{font-size:18px;margin:0 0 5px}.field{width:100%;background:#0d192c;border:1px solid var(--line);border-radius:12px;padding:12px;color:var(--txt);font-size:15px;margin:6px 0 13px}.field:focus{outline:1px solid var(--gold)}label{font-size:13px;color:var(--muted)}.settingsgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.hint{font-size:11px;color:var(--muted);line-height:1.7;margin-top:8px}.toast{position:fixed;bottom:100px;left:50%;transform:translateX(-50%);background:#263c5d;padding:11px 16px;border-radius:12px;font-size:13px;display:none;z-index:10;box-shadow:0 5px 20px #0006}.loading{color:var(--muted);font-size:13px;text-align:center;padding:18px}.error{color:#ffc2a8}.footer{text-align:center;color:#7788a2;font-size:10px;margin:22px 0 5px}
+</style></head>
+<body><main class="app">
+<header class="top"><div class="brand"><div class="logo">☾</div><div><h1>Ronahî</h1><small id="tagline">رفيقك للصلاة والذكر</small></div></div><button class="iconbtn" id="refresh" aria-label="تحديث">↻</button></header>
+<div class="location">📍 <b id="cityLabel">دهوك – العراق</b> <span id="hijriTop"></span></div>
+<section id="home" class="page active">
+<div class="hero"><div class="date" id="gregDate">جارٍ تحميل التاريخ...</div><h2 id="nextLabel">الصلاة القادمة</h2><p class="next" id="nextPrayer">--:--</p><div class="count" id="countdown">جارٍ تحميل المواقيت</div><div class="progress"><span id="progress"></span></div></div>
+<div class="sectionhead"><h3 id="timesTitle">مواقيت الصلاة</h3><span id="hijriDate">التاريخ الهجري</span></div>
+<div class="prayers" id="prayerGrid"><div class="loading">جارٍ جلب مواقيت الصلاة لمدينة دهوك...</div></div><div id="sourceNote" class="hint" style="text-align:center"></div>
+<div class="card"><div class="row"><div><h3 id="reminderTitle" style="margin:0 0 5px">🌙 تذكير بالصلاة</h3><div class="muted" id="reminderDesc">فعّل التنبيهات لتذكيرك عندما يكون التطبيق مفتوحاً</div></div><button class="btn secondary" id="notifyBtn">تفعيل</button></div><div class="hint">ملاحظة: iPhone يدعم إشعارات الويب بشكل أفضل بعد إضافة التطبيق إلى الشاشة الرئيسية. قد لا تعمل التنبيهات المحلية في الخلفية بصورة مضمونة.</div></div>
+</section>
+<section id="qibla" class="page"><div class="card" style="text-align:center"><h3 id="qiblaTitle">🧭 اتجاه القبلة</h3><div class="muted" id="qiblaDesc">اتجاه الكعبة المشرفة من موقعك المحدد</div><div class="compass"><span class="compasslabel">الشمال N</span><div class="needle" id="qiblaNeedle">➤</div></div><div style="font-size:25px;color:var(--gold2);font-weight:700" id="qiblaDegree">--°</div><div class="muted" id="qiblaText">الاتجاه محسوب من دهوك</div><button class="btn secondary" id="calibrate" style="margin-top:15px">استخدام بوصلة الجهاز</button><div class="hint">قد تحتاج إلى معايرة البوصلة وإبعاد الهاتف عن المعادن والمغناطيس. تتطلب البوصلة HTTPS وإذن الحركة في الأجهزة المدعومة.</div></div></section>
+<section id="adhkar" class="page"><div class="card"><h3 id="adhkarTitle">🤲 أذكار مختارة</h3><div class="dhikr"><p>سُبْحَانَ اللَّهِ وَبِحَمْدِهِ</p><span class="muted">مئة مرة — ذكر عظيم خفيف على اللسان</span></div><div class="dhikr"><p>أَسْتَغْفِرُ اللَّهَ وَأَتُوبُ إِلَيْهِ</p><span class="muted">استغفار وتوبة إلى الله</span></div><div class="dhikr"><p>اللَّهُمَّ صَلِّ وَسَلِّمْ عَلَى نَبِيِّنَا مُحَمَّد</p><span class="muted">الصلاة والسلام على النبي ﷺ</span></div><div class="dhikr"><p>لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ</p><span class="muted">من الأذكار الجامعة</span></div></div><div class="card tasbih"><h3 id="tasbihTitle">📿 المسبحة الإلكترونية</h3><div class="countnum" id="tasCount">0</div><button class="tasbtn" id="tasAdd">اضغط للتسبيح</button><div style="margin-top:18px"><button class="btn secondary" id="tasReset">إعادة العداد</button></div></div></section>
+<section id="settings" class="page"><div class="card"><h3 id="settingsTitle">⚙️ الإعدادات</h3><label for="cityInput" id="cityLabelText">المدينة</label><input class="field" id="cityInput" value="Duhok" placeholder="Duhok"><label for="countryInput" id="countryLabelText">الدولة</label><input class="field" id="countryInput" value="Iraq" placeholder="Iraq"><div class="settingsgrid"><div><label for="method" id="methodLabel">طريقة الحساب</label><select class="field" id="method"><option value="3" selected>جدول بانگ المحلي – دهوك (للأيام المتوفرة)</option><option value="4">أم القرى</option><option value="5">الهيئة المصرية</option><option value="2">إسلاميك سوسايتي أوف نورث أمريكا</option><option value="1">جامعة العلوم الإسلامية</option><option value="-1">إعدادات تلقائية</option></select></div><div><label for="school" id="schoolLabel">حساب العصر</label><select class="field" id="school"><option value="0" selected>شافعي / قياسي</option><option value="1">حنفي</option></select></div></div><label for="language" id="languageLabel">لغة التطبيق</label><select class="field" id="language"><option value="ar">العربية</option><option value="ku">الكردية (باديني)</option><option value="en">English</option><option value="tr">Türkçe</option><option value="fa">فارسی</option><option value="ku-sorani">کوردی (سۆرانی)</option></select><button class="btn" id="saveSettings" style="width:100%">حفظ وتحديث المواقيت</button><div class="hint">مرجع دهوك: جدول بانگ الذي زوّدنا به المستخدم. جدول نوفمبر 2026 من صور بانگ، وجدول ديسمبر 2026 من البيانات التي زوّدنا بها المستخدم. خارج هذين الشهرين يستخدم التطبيق الحساب الاحتياطي، ولا يُعدّ مطابقاً للجدول المحلي.</div></div><div class="card"><h3 id="aboutTitle">حول التطبيق</h3><div class="muted">Ronahî<br>الإصدار 1.7<br>تطبيق ويب تجريبي لمواقيت الصلاة والقبلة والأذكار.</div></div></section>
+<div class="footer" id="appFooter">Ronahî · تقبّل الله طاعتكم</div></main>
+<nav class="tabs"><div class="tabrow"><button class="tab active" data-page="home"><span class="ico">⌂</span><span id="tabHome">الرئيسية</span></button><button class="tab" data-page="qibla"><span class="ico">🧭</span><span id="tabQibla">القبلة</span></button><button class="tab" data-page="adhkar"><span class="ico">📿</span><span id="tabAdhkar">الأذكار</span></button><button class="tab" data-page="settings"><span class="ico">⚙</span><span id="tabSettings">الإعدادات</span></button></div></nav><div class="toast" id="toast"></div>
+<script>
+const $=id=>document.getElementById(id);let timings=null, prayerTimes=[], timer=null, city='Duhok',country='Iraq',method='3',school='0',lat=36.8671,lon=42.9497,heading=null,watching=false;
+// Exact prayer times transcribed from the user's Bang app screenshots (Duhok, Nov 2026).
+// Column order in Bang's monthly table: Isha, Maghrib, Asr, Dhuhr, Fajr. Asr is stored in 24-hour format.
+const BANG_DUHOK_2026_11={
+'01':['06:40','05:18','14:55','11:59','05:02'],
+'02':['06:39','05:17','14:54','11:59','05:02'],
+'03':['06:38','05:16','14:53','11:59','05:03'],
+'04':['06:37','05:15','14:52','11:59','05:04'],
+'05':['06:36','05:14','14:52','11:59','05:05'],
+'06':['06:35','05:13','14:51','11:59','05:06'],
+'07':['06:33','05:12','14:50','12:00','05:07'],
+'08':['06:32','05:11','14:49','12:00','05:08'],
+'09':['06:31','05:10','14:49','12:00','05:08'],
+'10':['06:30','05:09','14:48','12:00','05:09'],
+'11':['06:29','05:08','14:48','12:00','05:10'],
+'12':['06:28','05:07','14:47','12:00','05:11'],
+'13':['06:27','05:06','14:46','12:00','05:12'],
+'14':['06:26','05:05','14:46','12:00','05:13'],
+'15':['06:25','05:04','14:45','12:01','05:14'],
+'16':['06:25','05:04','14:45','12:01','05:14'],
+'17':['06:24','05:03','14:44','12:01','05:15'],
+'18':['06:24','05:03','14:44','12:01','05:16'],
+'19':['06:23','05:02','14:44','12:01','05:17'],
+'20':['06:23','05:02','14:43','12:02','05:18'],
+'21':['06:22','05:01','14:43','12:02','05:19'],
+'22':['06:22','05:01','14:43','12:02','05:20'],
+'23':['06:21','05:00','14:42','12:03','05:20'],
+'24':['06:21','05:00','14:42','12:03','05:21'],
+'25':['06:20','04:59','14:42','12:03','05:22'],
+'26':['06:20','04:59','14:41','12:04','05:23'],
+'27':['06:19','04:58','14:41','12:04','05:24'],
+'28':['06:19','04:58','14:41','12:04','05:25'],
+'29':['06:17','04:57','14:41','12:05','05:25'],
+'30':['06:17','04:57','14:41','12:05','05:26']
+};
+// Exact December 2026 Duhok prayer timetable supplied by the user.
+// Stored order: Isha, Maghrib, Asr (24-hour), Dhuhr, Fajr.
+const BANG_DUHOK_2026_12={
+'01':['18:16','16:56','14:41','12:05','05:27'],
+'02':['18:16','16:56','14:41','12:06','05:28'],
+'03':['18:16','16:56','14:41','12:06','05:29'],
+'04':['18:16','16:56','14:41','12:07','05:29'],
+'05':['18:16','16:56','14:41','12:07','05:30'],
+'06':['18:16','16:56','14:41','12:07','05:31'],
+'07':['18:16','16:56','14:41','12:08','05:32'],
+'08':['18:16','16:56','14:41','12:08','05:32'],
+'09':['18:17','16:57','14:41','12:09','05:33'],
+'10':['18:17','16:57','14:41','12:09','05:34'],
+'11':['18:17','16:57','14:41','12:10','05:34'],
+'12':['18:17','16:57','14:42','12:10','05:35'],
+'13':['18:17','16:57','14:42','12:11','05:36'],
+'14':['18:17','16:57','14:42','12:11','05:36'],
+'15':['18:17','16:57','14:43','12:11','05:37'],
+'16':['18:18','16:58','14:43','12:12','05:38'],
+'17':['18:18','16:58','14:43','12:12','05:38'],
+'18':['18:19','16:59','14:44','12:13','05:39'],
+'19':['18:19','16:59','14:44','12:13','05:39'],
+'20':['18:20','17:00','14:44','12:14','05:40'],
+'21':['18:20','17:00','14:45','12:14','05:40'],
+'22':['18:21','17:01','14:45','12:15','05:41'],
+'23':['18:21','17:01','14:46','12:15','05:41'],
+'24':['18:22','17:02','14:46','12:16','05:42'],
+'25':['18:22','17:02','14:47','12:16','05:42'],
+'26':['18:23','17:03','14:48','12:17','05:43'],
+'27':['18:23','17:03','14:48','12:17','05:43'],
+'28':['18:24','17:04','14:49','12:18','05:43'],
+'29':['18:24','17:04','14:49','12:18','05:44'],
+'30':['18:25','17:05','14:50','12:19','05:44'],
+'31':['18:25','17:05','14:51','12:19','05:44']
+};
+const names=[['Fajr','الفجر','🌅'],['Sunrise','الشروق','☀️'],['Dhuhr','الظهر','🌤️'],['Asr','العصر','🌇'],['Maghrib','المغرب','🌆'],['Isha','العشاء','🌙']];
+function toast(s){$('toast').textContent=s;$('toast').style.display='block';setTimeout(()=>$('toast').style.display='none',2600)}
+function cleanTime(s){return (s||'').split(' ')[0]}
+function fmtTime(t){let [h,m]=t.split(':').map(Number);let d=new Date();d.setHours(h,m,0,0);return new Intl.DateTimeFormat('en-US',{hour:'numeric',minute:'2-digit'}).format(d)}
+function renderGrid(){if(!timings)return;$('prayerGrid').innerHTML=names.map(([key,n,ico])=>`<div class="prayer ${key===window.currentKey?'active':''} ${key==='Dhuhr'?'wide':''}"><div><span class="picon">${ico}</span><span class="pname">${n}</span></div><span class="ptime">${timings[key]&&timings[key]!=='—'?fmtTime(cleanTime(timings[key])):'—'}</span></div>`).join('')}
+async function loadTimes(){
+ $('prayerGrid').innerHTML='<div class="loading">جارٍ تحميل المواقيت...</div>';
+ const date=new Date();
+ const isDuhok=city.toLowerCase()==='duhok'&&country.toLowerCase()==='iraq';
+ const day=String(date.getDate()).padStart(2,'0');
+ const localRow=isDuhok&&date.getFullYear()===2026?(date.getMonth()===10?BANG_DUHOK_2026_11[day]:date.getMonth()===11?BANG_DUHOK_2026_12[day]:null):null;
+ let hijriText='';
+ if(localRow){
+   timings={Fajr:localRow[4],Dhuhr:localRow[3],Asr:localRow[2],Maghrib:localRow[1],Isha:localRow[0],Sunrise:'—'};
+   $('sourceNote').textContent=date.getMonth()===10?'المواقيت مأخوذة من جدول بانگ المرسل لدهوك – نوفمبر 2026':'المواقيت مأخوذة من جدول دهوك الذي زوّدنا به المستخدم – ديسمبر 2026';
+   // Fetch only supplementary sunrise and Hijri date; local prayer times remain usable if offline.
+   try{
+     let ds=[date.getDate(),date.getMonth()+1,date.getFullYear()].map(x=>String(x).padStart(2,'0')).join('-');
+     let url=`https://api.aladhan.com/v1/timingsByCity/${ds}?city=${encodeURIComponent(city)}&country=${encodeURIComponent(country)}&method=${method}&school=${school}`;
+     let r=await fetch(url);if(r.ok){let j=await r.json();if(j.code===200){timings.Sunrise=j.data.timings.Sunrise;let h=j.data.date.hijri;hijriText=`${h.day} ${h.month.ar} ${h.year} هـ`;}}
+   }catch(e){}
+ }else{
+   try{
+     let ds=[date.getDate(),date.getMonth()+1,date.getFullYear()].map(x=>String(x).padStart(2,'0')).join('-');
+     let url=`https://api.aladhan.com/v1/timingsByCity/${ds}?city=${encodeURIComponent(city)}&country=${encodeURIComponent(country)}&method=${method}&school=${school}`;
+     let r=await fetch(url);if(!r.ok)throw Error('network');let j=await r.json();if(j.code!==200)throw Error('api');timings=j.data.timings;let h=j.data.date.hijri;hijriText=`${h.day} ${h.month.ar} ${h.year} هـ`;
+     $('sourceNote').textContent='خارج نطاق جداول دهوك المحلية المرسلة؛ يتم استخدام الحساب الاحتياطي عبر الإنترنت.';
+   }catch(e){$('prayerGrid').innerHTML='<div class="loading error">لا توجد بيانات محلية لهذا التاريخ وتعذّر الاتصال بالإنترنت.</div>';toast('تعذر تحميل المواقيت');return;}
+ }
+ if(hijriText){$('hijriDate').textContent=hijriText;$('hijriTop').textContent=' · '+hijriText;}
+ $('gregDate').textContent=new Intl.DateTimeFormat(({ar:'ar-IQ',ku:'ku',en:'en-US',tr:'tr-TR',fa:'fa-IR','ku-sorani':'ckb'})[$('language').value]||'ar-IQ',{weekday:'long',day:'numeric',month:'long',year:'numeric'}).format(date);
+ $('cityLabel').textContent=city==='Duhok'?'دهوك – العراق':city+' – '+country;
+ renderGrid();updateNext();if(timer)clearInterval(timer);timer=setInterval(updateNext,1000);
+}
+function updateNext(){if(!timings)return;let now=new Date(),all=names.filter(x=>x[0]!=='Sunrise').map(([k,n])=>{let [h,m]=cleanTime(timings[k]).split(':').map(Number),d=new Date();d.setHours(h,m,0,0);return {k,n,d}});let next=all.find(x=>x.d>now);if(!next){next=all[0];next.d.setDate(next.d.getDate()+1)}let prev=[...all].reverse().find(x=>x.d<=now);if(!prev){prev={d:new Date(all[all.length-1].d)};prev.d.setDate(prev.d.getDate()-1)}let sec=Math.max(0,Math.floor((next.d-now)/1000)),hh=Math.floor(sec/3600),mm=Math.floor(sec%3600/60),ss=sec%60;$('nextLabel').textContent=(LANGS[$('language').value]||LANGS.ar).next+': '+next.n;$('nextPrayer').textContent=fmtTime(cleanTime(timings[next.k]));let ld=LANGS[$('language').value]||LANGS.ar;$('countdown').textContent=`${ld.remaining} ${hh}${ld.hour} ${mm}${ld.minute} ${ss}${ld.second}`;let span=next.d-prev.d,done=now-prev.d;$('progress').style.width=Math.max(0,Math.min(100,done/span*100))+'%';window.currentKey=next.k;renderGrid()}
+function qibla(){let kLat=21.4225*Math.PI/180,kLon=39.8262*Math.PI/180,p=lat*Math.PI/180,l=lon*Math.PI/180;let y=Math.sin(kLon-l),x=Math.cos(p)*Math.tan(kLat)-Math.sin(p)*Math.cos(kLon-l);let deg=(Math.atan2(y,x)*180/Math.PI+360)%360;$('qiblaDegree').textContent=Math.round(deg)+'°';$('qiblaNeedle').style.transform=`rotate(${deg}deg)`;$('qiblaText').textContent='زاوية القبلة من الشمال: '+Math.round(deg)+' درجة'}
+$('refresh').onclick=loadTimes;$('saveSettings').onclick=()=>{city=$('cityInput').value.trim()||'Duhok';country=$('countryInput').value.trim()||'Iraq';method=$('method').value;school=$('school').value;$('cityLabel').textContent=city+' – '+country;loadTimes();toast('تم حفظ الإعدادات')};document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));b.classList.add('active');$(b.dataset.page).classList.add('active')});let tas=0;$('tasAdd').onclick=()=>{$('tasCount').textContent=++tas};$('tasReset').onclick=()=>{tas=0;$('tasCount').textContent=tas};$('notifyBtn').onclick=async()=>{if(!('Notification'in window)){toast('المتصفح لا يدعم الإشعارات');return}let p=await Notification.requestPermission();toast(p==='granted'?'تم السماح بالإشعارات':'لم يتم السماح بالإشعارات')};$('calibrate').onclick=()=>{if(!('DeviceOrientationEvent'in window)){toast('البوصلة غير مدعومة في هذا الجهاز');return}let start=()=>{window.addEventListener('deviceorientationabsolute',e=>{if(e.alpha!=null){let d=(360-e.alpha)%360;$('qiblaNeedle').style.transform=`rotate(${((parseInt($('qiblaDegree').textContent)||0)-d)}deg)`}},true);toast('تم تشغيل مستشعر الاتجاه')};if(typeof DeviceOrientationEvent.requestPermission==='function')DeviceOrientationEvent.requestPermission().then(x=>x==='granted'?start():toast('لم يتم منح الإذن')).catch(()=>toast('تعذر تشغيل البوصلة'));else start()};
+
+const LANGS={
+ar:{dir:'rtl',tagline:'رفيقك للصلاة والذكر',home:'الرئيسية',qibla:'القبلة',adhkar:'الأذكار',settings:'الإعدادات',times:'مواقيت الصلاة',next:'الصلاة القادمة',remaining:'متبقي',hour:'ساعة',minute:'دقيقة',second:'ثانية',reminder:'🌙 تذكير بالصلاة',reminderDesc:'فعّل التنبيهات لتذكيرك عندما يكون التطبيق مفتوحاً',enable:'تفعيل',qiblaTitle:'🧭 اتجاه القبلة',qiblaDesc:'اتجاه الكعبة المشرفة من موقعك المحدد',calibrate:'استخدام بوصلة الجهاز',adhkarTitle:'🤲 أذكار مختارة',tasbihTitle:'📿 المسبحة الإلكترونية',tap:'اضغط للتسبيح',reset:'إعادة العداد',city:'المدينة',country:'الدولة',method:'طريقة الحساب',school:'حساب العصر',language:'لغة التطبيق',save:'حفظ وتحديث المواقيت',about:'حول التطبيق',names:['الفجر','الشروق','الظهر','العصر','المغرب','العشاء'],hijri:'التاريخ الهجري',loading:'جارٍ تحميل المواقيت'},
+'ku':{dir:'rtl',tagline:'Hevalê te ji bo nimêj û zikrê',home:'سەرەکی',qibla:'قیبلە',adhkar:'زیکر',settings:'ڕێکخستن',times:'کاتێن نڤێژێ',next:'نڤێژا دهێت',remaining:'مای',hour:'دەمژمێر',minute:'خولەک',second:'چرکە',reminder:'🌙 بیرخستنەوەیا نڤێژێ',reminderDesc:'ئاگەهداریان چالاک بکە بۆ بیرخستنەوە ل دەمێ ڤەکریا بەرنامەیێ',enable:'چالاک بکە',qiblaTitle:'🧭 ئاراستەیا قیبلەیێ',qiblaDesc:'ئاراستەیا کەعبەیێ ژ جهێ تە',calibrate:'بکارئینانا بۆسۆلا تەلەفۆنێ',adhkarTitle:'🤲 زیکرێن هەلبژارتی',tasbihTitle:'📿 تەسبیحا ئەلیکترۆنی',tap:'بۆ تەسبیحێ لێ بدە',reset:'ژمارەکێ ڤەگەرینە',city:'باژێر',country:'وەلات',method:'رێکا حسابکرنێ',school:'حسابا عەسرێ',language:'زمانێ بەرنامەیێ',save:'پاراستن و نووکرنا کاتان',about:'دەربارەی بەرنامەیێ',names:['بەیانی','ڕۆژهەلاتن','نیوەڕۆ','عەسر','مەغریب','عیشا'],hijri:'مێژوویا هیجری',loading:'کاتێن نڤێژێ دهێنە بارکرن'},
+en:{dir:'ltr',tagline:'Your companion for prayer and remembrance',home:'Home',qibla:'Qibla',adhkar:'Adhkar',settings:'Settings',times:'Prayer Times',next:'Next prayer',remaining:'Remaining',hour:'h',minute:'m',second:'s',reminder:'🌙 Prayer reminder',reminderDesc:'Enable notifications for reminders while the app is open',enable:'Enable',qiblaTitle:'🧭 Qibla direction',qiblaDesc:'Direction of the Kaaba from your selected location',calibrate:'Use device compass',adhkarTitle:'🤲 Selected adhkar',tasbihTitle:'📿 Digital tasbih',tap:'Tap to count',reset:'Reset counter',city:'City',country:'Country',method:'Calculation method',school:'Asr calculation',language:'App language',save:'Save and refresh times',about:'About',names:['Fajr','Sunrise','Dhuhr','Asr','Maghrib','Isha'],hijri:'Hijri date',loading:'Loading prayer times'},
+tr:{dir:'ltr',tagline:'Namaz ve zikir için yol arkadaşınız',home:'Ana sayfa',qibla:'Kıble',adhkar:'Dualar',settings:'Ayarlar',times:'Namaz vakitleri',next:'Sonraki namaz',remaining:'Kalan',hour:'sa',minute:'dk',second:'sn',reminder:'🌙 Namaz hatırlatıcısı',reminderDesc:'Uygulama açıkken hatırlatma almak için bildirimleri açın',enable:'Etkinleştir',qiblaTitle:'🧭 Kıble yönü',qiblaDesc:'Seçtiğiniz konumdan Kâbe yönü',calibrate:'Cihaz pusulasını kullan',adhkarTitle:'🤲 Seçilmiş zikirler',tasbihTitle:'📿 Dijital tesbih',tap:'Saymak için dokunun',reset:'Sayacı sıfırla',city:'Şehir',country:'Ülke',method:'Hesaplama yöntemi',school:'İkindi hesabı',language:'Uygulama dili',save:'Kaydet ve vakitleri yenile',about:'Hakkında',names:['İmsak','Güneş','Öğle','İkindi','Akşam','Yatsı'],hijri:'Hicri tarih',loading:'Namaz vakitleri yükleniyor'},
+fa:{dir:'rtl',tagline:'همراه شما برای نماز و ذکر',home:'خانه',qibla:'قبله',adhkar:'اذکار',settings:'تنظیمات',times:'اوقات نماز',next:'نماز بعدی',remaining:'باقی‌مانده',hour:'ساعت',minute:'دقیقه',second:'ثانیه',reminder:'🌙 یادآوری نماز',reminderDesc:'برای دریافت یادآوری هنگام باز بودن برنامه، اعلان‌ها را فعال کنید',enable:'فعال‌سازی',qiblaTitle:'🧭 جهت قبله',qiblaDesc:'جهت کعبه از موقعیت انتخاب‌شده شما',calibrate:'استفاده از قطب‌نمای دستگاه',adhkarTitle:'🤲 ذکرهای منتخب',tasbihTitle:'📿 تسبیح دیجیتال',tap:'برای شمارش لمس کنید',reset:'بازنشانی شمارنده',city:'شهر',country:'کشور',method:'روش محاسبه',school:'محاسبه عصر',language:'زبان برنامه',save:'ذخیره و به‌روزرسانی اوقات',about:'درباره برنامه',names:['فجر','طلوع آفتاب','ظهر','عصر','مغرب','عشا'],hijri:'تاریخ هجری',loading:'در حال بارگذاری اوقات نماز'},
+'ku-sorani':{dir:'rtl',tagline:'هاوڕێت بۆ نوێژ و زیکر',home:'سەرەکی',qibla:'قیبلە',adhkar:'زیکرەکان',settings:'ڕێکخستنەکان',times:'کاتەکانی نوێژ',next:'نوێژی داهاتوو',remaining:'ماوە',hour:'کاتژمێر',minute:'خولەک',second:'چرکە',reminder:'🌙 بیرخستنەوەی نوێژ',reminderDesc:'ئاگادارکردنەوەکان چالاک بکە بۆ بیرخستنەوە کاتێک ئەپەکە کراوەیە',enable:'چالاککردن',qiblaTitle:'🧭 ئاراستەی قیبلە',qiblaDesc:'ئاراستەی کەعبە لە شوێنی دیاریکراوتەوە',calibrate:'بەکارهێنانی قەیبڵەنوێژی ئامێر',adhkarTitle:'🤲 زیکرە هەڵبژێردراوەکان',tasbihTitle:'📿 تەسبیحی ئەلیکترۆنی',tap:'بۆ ژماردن دەست لێبدە',reset:'ڕیسێتکردنی ژمێرەر',city:'شار',country:'وڵات',method:'شێوازی ژماردن',school:'ژماردنی عەسر',language:'زمانی ئەپ',save:'پاشەکەوتکردن و نوێکردنەوەی کاتەکان',about:'دەربارە',names:['بەیانی','هەڵاتنی خۆر','نیوەڕۆ','عەسر','مەغریب','عیشا'],hijri:'بەرواری کۆچی',loading:'کاتەکانی نوێژ بار دەکرێن'}
+};
+function setLanguage(code){
+ const d=LANGS[code]||LANGS.ar;document.documentElement.lang=code;document.documentElement.dir=d.dir;
+ const put=(id,v)=>{let e=$(id);if(e)e.textContent=v};
+ [['tagline','tagline'],['tabHome','home'],['tabQibla','qibla'],['tabAdhkar','adhkar'],['tabSettings','settings'],['timesTitle','times'],['nextLabel','next'],['reminderTitle','reminder'],['reminderDesc','reminderDesc'],['notifyBtn','enable'],['qiblaTitle','qiblaTitle'],['qiblaDesc','qiblaDesc'],['calibrate','calibrate'],['adhkarTitle','adhkarTitle'],['tasbihTitle','tasbihTitle'],['tasAdd','tap'],['tasReset','reset'],['settingsTitle','settings'],['cityLabelText','city'],['countryLabelText','country'],['methodLabel','method'],['schoolLabel','school'],['languageLabel','language'],['saveSettings','save'],['aboutTitle','about']].forEach(([id,k])=>put(id,d[k]));put('appFooter','Ronahî');
+ const current=names;current.forEach((x,i)=>x[1]=d.names[i]);
+ try{localStorage.setItem('ronahi-language',code)}catch(e){}
+ renderGrid();if(timings)updateNext();
+}
+$('language').value=(()=>{try{return localStorage.getItem('ronahi-language')||'ar'}catch(e){return 'ar'}})();
+$('language').onchange=e=>{setLanguage(e.target.value);toast('✓ '+e.target.options[e.target.selectedIndex].text)};
+if('serviceWorker'in navigator&&location.protocol.startsWith('http'))navigator.serviceWorker.register('./sw.js').catch(()=>{});setLanguage($('language').value||'ar');loadTimes();qibla();
+</script></body></html>
